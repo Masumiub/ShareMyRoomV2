@@ -77,7 +77,7 @@ const MostPopularCities = () => {
                     </div>
                 </div>
 
-                <div className="overflow-hidden lg:overflow-visible mt-10">
+                <div className="hidden md:block overflow-hidden lg:overflow-visible mt-10">
                     <Slider {...settings}>
                         {cityData.map((city, index) => (
                             <div key={index} className="px-3">
@@ -92,7 +92,7 @@ const MostPopularCities = () => {
                 </div>
             </div>
 
-            {/* <div className='max-w-6xl mx-auto p-3'>
+            <div className='md:hidden max-w-6xl mx-auto p-6'>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10'>
                     <Fade cascade>
                         <CityCard image={SydneyImage}
@@ -106,7 +106,7 @@ const MostPopularCities = () => {
                             propertyCount={28}></CityCard>
                     </Fade>
                 </div>
-            </div> */}
+            </div>
 
 
             {/* <div className="w-full overflow-hidden p-3 mt-10">

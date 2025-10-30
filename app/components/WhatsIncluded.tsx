@@ -63,11 +63,11 @@ export default function WhatsIncluded() {
             <div className="bg-white rounded-2xl overflow-hidden mt-30">
                 {/* Table Header */}
                 <div className="grid grid-cols-3 bg-gray-50 border-b border-gray-200">
-                    <div className="p-6 font-semibold text-gray-700">Features</div>
-                    <div className="p-6 font-semibold text-gray-700 border-l-2 border-r-2 border-t-2 rounded-tl-2xl rounded-tr-2xl border-blue-500 bg-blue-50 text-center">
+                    <div className="text-xs md:text-md p-6 font-semibold text-gray-700">Features</div>
+                    <div className="text-xs md:text-md p-6 font-semibold text-gray-700 border-l-2 border-r-2 border-t-2 rounded-tl-2xl rounded-tr-2xl border-blue-500 bg-blue-50 text-center">
                         ShareMyRoom
                     </div>
-                    <div className="p-6 font-semibold text-gray-700 border-l border-gray-200 text-center">
+                    <div className="text-xs md:text-md p-6 font-semibold text-gray-700 border-l border-gray-200 text-center">
                         Others in market
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export default function WhatsIncluded() {
                             {/* Feature Name */}
                             <div className="p-6 flex items-center gap-3 text-gray-800">
                             
-                                <span className="font-medium">{feature.name}</span>
+                                <span className="text-xs md:text-md font-medium">{feature.name}</span>
                             </div>
 
                             {/* ShareMyRoom Column */}
@@ -123,13 +123,13 @@ export default function WhatsIncluded() {
                 <div className="grid grid-cols-3 bg-gray-50 border-t border-gray-200">
                     <div className="p-6"></div>
                     <div className="p-6 border-l-2 border-r-2 border-b-2 border-blue-500 rounded-bl-2xl rounded-br-2xl bg-blue-50">
-                        <button className="text-xs md:text-sm w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+                        <button className="btn text-xs md:text-md w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold  rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
                             Get started
                             
                         </button>
                     </div>
                     <div className="p-6 border-l border-gray-200">
-                        <button className="text-xs md:text-sm w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+                        <button className="btn text-xs md:text-md w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold  rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
                             Get started
                            
                         </button>

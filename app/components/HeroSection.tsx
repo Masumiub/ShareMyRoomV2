@@ -14,12 +14,12 @@ export default function HeroSection() {
                 <Fade cascade>
                 <div className='w-full p-3 md:max-w-4xl mx-auto text-white'>
                     <h1 className='text-5xl md:text-6xl font-bold pt-20'>Belong Anywhere. Live Smarter.</h1>
-                    <p className='text-lg mt-10'>Find affordable, fully-furnished rooms for co-living. Over 100,000 of people have shared all inclusive, safe, reliable rooms via ShareMyRoom.</p>
+                    <p className='text-sm md:text-lg mt-10'>Find affordable, fully-furnished rooms for co-living. Over 100,000 of people have shared all inclusive, safe, reliable rooms via ShareMyRoom.</p>
                 </div>
                 </Fade>
 
 
-                <div className='absolute left-1/2 -translate-x-1/2 z-20 mt-15 w-full xl:w-5xl'>
+                <div className='absolute left-1/2 -translate-x-1/2 z-20 mt-12 w-full xl:w-5xl'>
                     <SearchBar />
                 </div>
 

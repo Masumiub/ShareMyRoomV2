@@ -11,7 +11,7 @@ export default function AnyQuestions() {
                 <Image src={Avatars} alt='avatar'></Image>
             </div>
 
-            <div>
+            <div className='p-3'>
                 <h4 className='text-xl font-semibold'>Still have questions?</h4>
 
                 <p className='text-gray-600 mb-6'>Get updates on new rooms, move-in deals, and city highlights.</p>

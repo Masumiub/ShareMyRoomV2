@@ -1,23 +1,23 @@
 import React from 'react'
 import TestimonialImage from '../assets/Testimonials.png'
 import Image from 'next/image'
-import { Star } from 'lucide-react';
+import { FaStar } from "react-icons/fa";
 
 
 export default function Testimonials() {
     return (
         <div className='bg-base-200'>
-            <div className='w-full p-3 md:max-w-6xl mx-auto mt-40 mb-40'>
+            <div className='w-full p-6 md:max-w-6xl mx-auto mt-40 mb-40'>
                 <div className=' pt-20 pb-20'>
                     <div className='flex flex-col md:flex-row items-center justify-between'>
                         <div className='w-full md:w-1/2'>
 
                             <div className='flex gap-2 mb-5'>
-                                <Star size={20} className='text-yellow-500'/>
-                                <Star size={20} className='text-yellow-500'/>
-                                <Star size={20} className='text-yellow-500'/>
-                                <Star size={20} className='text-yellow-500'/>
-                                <Star size={20} className='text-yellow-500'/>
+                                <FaStar size={20} className='text-yellow-500'/>
+                                <FaStar size={20} className='text-yellow-500'/>
+                                <FaStar size={20} className='text-yellow-500'/>
+                                <FaStar size={20} className='text-yellow-500'/>
+                                <FaStar size={20} className='text-yellow-500'/>
                             </div>
 
                             <h1 className='text-3xl md:text-5xl'>Moved in within two days. Everything was spotless!</h1>

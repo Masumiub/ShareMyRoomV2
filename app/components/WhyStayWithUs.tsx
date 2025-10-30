@@ -24,7 +24,7 @@ export default function WhyStayWithUs() {
                         </div>
                         <div className='bg-base-200 p-7 rounded-2xl'>
                             <h3 className='text-lg font-semibold'>Fully Furnished Homes</h3>
-                            <p className='text-gray-500 mt-3'>Move in with just your suitcase. No Hustle!</p>
+                            <p className='text-gray-500 mt-3 text-sm'>Move in with just your suitcase. No Hustle!</p>
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@ export default function WhyStayWithUs() {
                         </div>
                         <div className='bg-base-200 p-7 rounded-2xl'>
                             <h3 className='text-lg font-semibold'>All Bills Included</h3>
-                            <p className='text-gray-500 mt-3'>Rent covers everything — utilities, Wi-Fi, cleaning.</p>
+                            <p className='text-gray-500 mt-3 text-sm'>Rent covers everything — utilities, Wi-Fi, cleaning.</p>
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@ export default function WhyStayWithUs() {
                         </div>
                         <div className='bg-base-200 p-7 rounded-2xl'>
                             <h3 className='text-lg font-semibold'>Fast Move-in</h3>
-                            <p className='text-gray-500 mt-3'> Book online, sign digitally, get your keys.</p>
+                            <p className='text-gray-500 mt-3 text-sm'> Book online, sign digitally, get your keys.</p>
                         </div>
                     </div>
 
@@ -54,7 +54,7 @@ export default function WhyStayWithUs() {
                         </div>
                         <div className='bg-base-200 p-7 rounded-2xl'>
                             <h3 className='text-lg font-semibold'>Maintenance Handled</h3>
-                            <p className='text-gray-500 mt-3'>Report issues easily via your portal.</p>
+                            <p className='text-gray-500 mt-3 text-sm'>Report issues easily via your portal.</p>
                         </div>
                     </div>
 
