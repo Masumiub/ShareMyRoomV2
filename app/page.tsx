@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+      
       <HeroSection></HeroSection>
       <HowITWorks></HowITWorks>
       <div className="bg-base-200 pt-10 pb-20">
@@ -31,7 +31,7 @@ export default function Home() {
       <Testimonials></Testimonials>
       <FAQs></FAQs>
       <AnyQuestions></AnyQuestions>
-    <Footer></Footer>
+    
     </>
 
   );

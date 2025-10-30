@@ -2,6 +2,7 @@ import React from 'react';
 import { Star, Wifi, Utensils, Car } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 
+
 interface RoomCardProps {
     roomType: string;
     roomTitle: string;

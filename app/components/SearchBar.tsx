@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// export default function SearchBar() {
-//     return (
-//         <div className='flex mx-auto xl:w-4xl'>
-//             <input type="text" placeholder="Type here" className="input input-xl w-10/12 mx-auto" />
-//         </div>
-//     )
-// }
-
 
 'use client';
 
