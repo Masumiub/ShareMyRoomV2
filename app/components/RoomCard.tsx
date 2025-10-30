@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star, Wifi, Utensils, Car } from 'lucide-react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface RoomCardProps {
     roomType: string;
