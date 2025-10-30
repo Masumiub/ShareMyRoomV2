@@ -1,6 +1,21 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.HeroSection {
+  /* List images, separated by a comma (first image is on top) */
+  background-image: url(./assets/Line\ pattern.svg), url(./assets/Line\ pattern.svg);
+  
+  /* List positions, corresponding to the images */
+  background-position: top left, bottom right;
+  
+  /* List repeat settings, corresponding to the images */
+  background-repeat: no-repeat, no-repeat; 
+  
+
+  
+
+}
+
 
 /* :root {
   --background: #ffffff;

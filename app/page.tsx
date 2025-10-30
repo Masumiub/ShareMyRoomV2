@@ -1,5 +1,5 @@
 
-import Navbar from "./components/Navbar";
+
 import HeroSection from "./components/HeroSection";
 import HowITWorks from "./components/HowITWorks";
 import MostPopularCities from "./components/MostPopularCities";
@@ -9,15 +9,16 @@ import AnyQuestions from "./components/AnyQuestions";
 import WhatsIncluded from "./components/WhatsIncluded";
 import Testimonials from "./components/Testimonials";
 import PopularPicks from "./components/PopularPicks";
-import MultipleItems from "./components/MultipleItems";
-import Footer from "./components/Footer";
+
 
 
 export default function Home() {
   return (
     <>
-      
-      <HeroSection></HeroSection>
+      <div className="HeroSection">
+        <HeroSection></HeroSection>
+      </div>
+
       <HowITWorks></HowITWorks>
       <div className="bg-base-200 pt-10 pb-20">
         <MostPopularCities></MostPopularCities>
@@ -31,7 +32,7 @@ export default function Home() {
       <Testimonials></Testimonials>
       <FAQs></FAQs>
       <AnyQuestions></AnyQuestions>
-    
+
     </>
 
   );
