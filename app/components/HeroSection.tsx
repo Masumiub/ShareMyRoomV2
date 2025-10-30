@@ -13,13 +13,13 @@ export default function HeroSection() {
             <div className='bg-[#0164A3]  text-center pb-0 mb-0 rounded-4xl relative bg-linear-to-b from-[#0164A3] to-[#1096ea]'>
                 <Fade cascade>
                 <div className='w-full p-3 md:max-w-4xl mx-auto text-white'>
-                    <h1 className='text-5xl md:text-6xl font-bold pt-20'>Belong Anywhere. Live Smarter.</h1>
+                    <h1 className='text-5xl md:text-6xl font-bold pt-10 md:pt-20'>Belong Anywhere. Live Smarter.</h1>
                     <p className='text-sm md:text-lg mt-10'>Find affordable, fully-furnished rooms for co-living. Over 100,000 of people have shared all inclusive, safe, reliable rooms via ShareMyRoom.</p>
                 </div>
                 </Fade>
 
 
-                <div className='absolute left-1/2 -translate-x-1/2 z-20 mt-12 w-full xl:w-5xl'>
+                <div className='absolute left-1/2 -translate-x-1/2 z-20 mt-20 md:mt-12 w-full xl:w-5xl'>
                     <SearchBar />
                 </div>
 
