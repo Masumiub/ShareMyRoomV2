@@ -1,0 +1,11 @@
+button.slick-arrow.slick-prev{
+    /* border: 1px solid rgb(154, 154, 154); */
+    border-radius: 100%;
+    background-color:rgb(205, 205, 205);
+}
+
+button.slick-arrow.slick-next{
+    /* border: 1px solid rgb(154, 154, 154); */
+    border-radius: 100%;
+    background-color:rgb(205, 205, 205);
+}
