@@ -67,7 +67,7 @@ const MostPopularCities = () => {
         <div className="w-full mb-20">
             <div className='mt-20  w-full p-3 md:max-w-6xl mx-auto'>
 
-                <div className='flex flex-row md:flex-row items-start justify-between p-3'>
+                <div className='flex flex-col md:flex-row items-start justify-between p-3 gap-6'>
                     <div>
                         <h2 className='text-4xl font-semibold'>Most Popular Cities</h2>
                         <p className='mt-4 text-gray-600'>Explore the most in-demand suburbs right now</p>

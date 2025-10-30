@@ -39,7 +39,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className='btn btn-ghost'>Sign in</button>
+                    <button className='hidden md:block btn btn-ghost'>Sign in</button>
                     <button className="btn bg-[#007BC4] hover:bg-[#01588b] text-white border-0 rounded-xl">Get Started</button>
                 </div>
             </div>

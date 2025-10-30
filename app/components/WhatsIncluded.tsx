@@ -123,13 +123,13 @@ export default function WhatsIncluded() {
                 <div className="grid grid-cols-3 bg-gray-50 border-t border-gray-200">
                     <div className="p-6"></div>
                     <div className="p-6 border-l-2 border-r-2 border-b-2 border-blue-500 rounded-bl-2xl rounded-br-2xl bg-blue-50">
-                        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+                        <button className="text-xs md:text-sm w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
                             Get started
                             
                         </button>
                     </div>
                     <div className="p-6 border-l border-gray-200">
-                        <button className="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+                        <button className="text-xs md:text-sm w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
                             Get started
                            
                         </button>

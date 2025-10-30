@@ -11,7 +11,7 @@ export default function Footer() {
       <footer className="bg-base-200 text-gray-600 pt-15">
         <div className="max-w-6xl mx-auto px-4 py-12">
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
 
             {/* Main Pages Column */}
             <div className="lg:col-span-1">
@@ -164,9 +164,7 @@ export default function Footer() {
               <div className="">
                 <div className="flex flex-row items-center  gap-2">
                   <Image src={Logo} alt="logo"></Image>
-                  <p className="text-gray-600 text-lg">
-                    ShareMyRoom
-                  </p>
+                  <h2 className='ml-2 font-bold text-2xl text-[#007BC4]'>ShareMyRoom</h2>
                 </div>
               </div>
               <div className="text-gray-600 text-sm">

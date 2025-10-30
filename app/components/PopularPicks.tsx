@@ -54,7 +54,7 @@ export default function PopularPicks() {
         <div>
             <div className='mt-20 mb-20 w-full p-3 md:max-w-6xl mx-auto'>
 
-                <div className='flex flex-row md:flex-row items-start justify-between'>
+                <div className='flex flex-col md:flex-row items-start justify-between gap-6'>
                     <div>
                         <h2 className='text-4xl font-semibold'>Popular picks for today</h2>
                         <p className='mt-4 text-gray-600'>Check the top favourite places to rent for today.</p>
