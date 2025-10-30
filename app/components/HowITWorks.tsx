@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 export default function HowITWorks() {
     return (
         <div>
-            <div className='w-full p-3 md:max-w-6xl mx-auto mt-60 md:mt-30 mb-30'>
+            <div className='w-full p-3 md:max-w-6xl mx-auto mt-80 md:mt-30 mb-30'>
                 <div>
                     <h2 className='text-4xl text-center font-semibold'>How ShareMyRoom Works</h2>
 
