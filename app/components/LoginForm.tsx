@@ -2,6 +2,7 @@ import React from 'react'
 import { FcGoogle } from "react-icons/fc";
 import Logo from "../assets/Logo.svg"
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function LoginForm() {
     return (
@@ -22,7 +23,7 @@ export default function LoginForm() {
                     <label className="label">Password</label>
                     <input type="password" className="input w-full" placeholder="Password" />
                     <div><a className="link link-hover">Forgot password?</a></div>
-                    <button className="btn bg-[#007BC4] border-0 mt-4 text-white">Login</button>
+                    <Link href='/Dashboard' className="btn bg-[#007BC4] border-0 mt-4 text-white">Login</Link>
                 </fieldset>
 
                 <button className="btn  mt-4 w-full"><FcGoogle />Continue with Google</button>

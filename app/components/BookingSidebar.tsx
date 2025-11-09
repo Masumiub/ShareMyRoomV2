@@ -25,7 +25,7 @@ const BookingSidebar = () => {
 
   return (
     <div className="sticky top-8">
-      <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
+      <div className="border border-gray-200 rounded-2xl p-6 shadow-lg">
         {/* Price and Rating */}
         <div className="flex justify-between items-start mb-6">
           <div>

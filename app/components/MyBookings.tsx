@@ -6,14 +6,17 @@ export default function MyBookings() {
     return (
         <div>
 
-            <div className='mb-5'>
-                <h2 className='text-xl font-semibold'>My bookings</h2>
-                <p className='mt-2 text-sm text-gray-500'>Access all your previous bookings.</p>
+            <div className='flex flex-col md:flex-row justify-between items-center'>
+                <div className='mb-5'>
+                    <h2 className='text-xl font-semibold'>My bookings</h2>
+                    <p className='mt-2 text-sm text-gray-500'>Access all your previous bookings.</p>
+                </div>
+
+                <div>
+                    <button className='btn btn-sm'><CloudDownload />Download All</button>
+                </div>
             </div>
 
-            <div>
-                <button className='btn btn-sm'><CloudDownload />Download All</button>
-            </div>
 
 
             <div className="overflow-x-auto">

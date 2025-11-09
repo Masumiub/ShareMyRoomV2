@@ -10,9 +10,6 @@ export default function page() {
                 <p className='mt-2 text-sm text-gray-500'>Manage your booking and profile settings here.</p>
             </div>
 
-            <div>
-                <button className='btn btn-sm'></button>
-            </div>
 
 
             {/* name of each tab group should be unique */}

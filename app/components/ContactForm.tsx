@@ -34,7 +34,7 @@ const ContactForm = () => {
                 <div className="lg:col-span-1">
                     <h2 className="text-2xl font-semibold mb-6">Contact for enquiry</h2>
 
-                    <div className='bg-white rounded-md shadow-2xl border-0 p-5'>
+                    <div className='border border-gray-200 rounded-2xl p-6 shadow-lg'>
 
                         {/* Name Fields */}
                         <div>
