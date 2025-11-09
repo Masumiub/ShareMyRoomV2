@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, Wifi, Utensils, Car } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 
 interface RoomCardProps {
@@ -100,9 +101,9 @@ const RoomCard = ({
                         <span className="text-2xl font-bold text-gray-900">${pricePerNight}</span>
                         <span className="text-gray-600 text-sm">/night</span>
                     </div>
-                    <button className="btn btn-sm bg-[#007BC4] hover:bg-[#01588b] border-0 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200">
+                    <Link href='/RoomDetails' className="btn btn-sm bg-[#007BC4] hover:bg-[#01588b] border-0 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200">
                         Book Now
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
