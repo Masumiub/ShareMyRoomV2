@@ -8,11 +8,12 @@ import {
     PawPrint,
     PartyPopper,
     Shield,
-    AlertTriangle,
     Calendar,
     ChevronDown,
     ChevronUp
 } from 'lucide-react';
+
+type SectionKey = 'healthSafety' | 'cancellation';
 
 const ThingsToKnow = () => {
     const [expandedSections, setExpandedSections] = useState({
@@ -20,7 +21,7 @@ const ThingsToKnow = () => {
         cancellation: false
     });
 
-    const toggleSection = (section: string) => {
+    const toggleSection = (section: SectionKey) => {
         setExpandedSections(prev => ({
             ...prev,
             [section]: !prev[section]
@@ -136,8 +137,6 @@ const ThingsToKnow = () => {
                 </div>
 
             </div>
-
-
         </div>
     );
 };
