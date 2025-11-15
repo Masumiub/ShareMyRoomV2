@@ -61,60 +61,65 @@ export default function page() {
                     <SearchBar></SearchBar>
                 </div>
 
-                <div className='mt-[420px] md:mt-45 flex justify-center'>
-                    <div className='flex flex-wrap gap-3'>
-                        <div>
-                            <select defaultValue="Price" className="select select-sm">
+                <div className='max-w-6xl mx-auto'>
+                    <div className='mt-[420px] md:mt-45 flex justify-center'>
+                        <div className='flex flex-wrap gap-3'>
+                            <div>
+                            <select defaultValue="Price" className="btn select select-sm bg-base-200 border-gray-200">
                                 <option disabled={true}>Pick a Price</option>
+                                <option>Price</option>
                                 <option>$5000</option>
                                 <option>$10000</option>
                                 <option>$15000</option>
                             </select>
                         </div>
-                        <div>
+                            {/* <div>
                             <select defaultValue="Type of place" className="select select-sm">
                                 <option disabled={true}>Type of place</option>
                                 <option>$5000</option>
                                 <option>$10000</option>
                                 <option>$15000</option>
                             </select>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Free cancellation</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Wifi</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Kitchen</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Kitchen</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Air conditioning</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Washer</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Iron</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Dedicated workspace</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Free parking</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'>Dryer</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-sm'> <SlidersHorizontal size={12} /> Filters</button>
-                        </div>
+                        </div> */}
+                            <div>
+                                <button className='btn btn-sm'>Free cancellation</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Wifi</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Kitchen</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Kitchen</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Air conditioning</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Washer</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Iron</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Dedicated workspace</button>
+                            </div>
+                            <div>
+                                <button className='btn btn-sm'>Free parking</button>
+                            </div>
+                            {/* <div>
+                                <button className='btn btn-sm'>Dryer</button>
+                            </div> */}
+                            <div>
+                                <button className='btn btn-sm'> <SlidersHorizontal size={12} /> Filters</button>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
+
+
             </div>
             <div className='w-full md:max-w-6xl p-3 mx-auto'>
                 <div className='flex flex-col md:flex-row gap-8 '>

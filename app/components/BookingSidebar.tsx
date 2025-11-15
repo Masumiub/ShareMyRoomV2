@@ -121,7 +121,7 @@ const BookingSidebar = () => {
         </button>
 
         {/* Reserve Button */}
-        <button className="w-full bg-[#0164A3] text-white py-3 rounded-lg font-semibold hover:bg-rose-700 transition-colors mb-6">
+        <button className="w-full bg-[#0164A3] text-white py-3 rounded-lg font-semibold hover:bg-[#004772] transition-colors mb-6">
           Reserve
         </button>
 

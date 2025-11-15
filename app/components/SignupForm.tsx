@@ -2,7 +2,9 @@
 import { useState } from "react";
 import { authClient } from "../lib/auth-client";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
+import Logo from '../assets/Logo.svg'
+import { FcGoogle } from "react-icons/fc";
 export default function SignUpForm() {
 
     const router = useRouter();
@@ -47,6 +49,10 @@ export default function SignUpForm() {
 
     return (
         <div className="p-8 max-w-md mx-auto">
+            <div className='flex justify-center mb-4'>
+                <Image src={Logo} alt='logo'></Image>
+            </div>
+
             <h2 className="text-2xl font-semibold mb-4 text-center">Create your account</h2>
 
             <fieldset className="fieldset flex flex-col gap-4">
@@ -72,13 +78,16 @@ export default function SignUpForm() {
                 {error && <p className="text-red-500 text-sm">{error}</p>}
 
                 <button
-                    className="btn bg-[#007BC4] border-0 text-white mt-4 w-full"
+                    className="btn bg-[#007BC4] border-0 text-white mt-1 w-full"
                     onClick={handleSignUp}
                     disabled={isLoading}
                 >
                     {isLoading ? "Signing up..." : "Sign Up"}
                 </button>
+
+                  
             </fieldset>
+            <button className="btn  mt-4 w-full"><FcGoogle />Continue with Google</button>
 
             <p className="text-center text-sm text-gray-500 mt-4">
                 Already have an account? <span className="text-blue-600 cursor-pointer">Log in</span>
