@@ -3,16 +3,17 @@ import MyBookings from '../components/MyBookings'
 import { auth } from "../api/auth/[...auth]/route";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import ProfileSettings from '../components/ProfileSettings';
 
 export default async function page() {
 
-    const session = await auth.api.getSession({
-        headers: await headers() 
-    });
+    // const session = await auth.api.getSession({
+    //     headers: await headers() 
+    // });
 
-    if (!session?.user) {
-        redirect("/");
-    }
+    // if (!session?.user) {
+    //     redirect("/");
+    // }
 
 
     return (
@@ -40,7 +41,7 @@ export default async function page() {
                 <div className="tab-content border-base-300 bg-base-100 p-10">My Documents</div>
 
                 <input type="radio" name="my_tabs_2" className="tab" aria-label="Profile Settings" />
-                <div className="tab-content border-base-300 bg-base-100 p-10">Profile Settings</div>
+                <div className="tab-content border-base-300 bg-base-100 p-10"><ProfileSettings></ProfileSettings></div>
             </div>
 
 
