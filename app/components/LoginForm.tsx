@@ -1,10 +1,49 @@
+"use client"
 import React from 'react'
+import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import Logo from "../assets/Logo.svg"
 import Image from 'next/image';
 import Link from 'next/link';
+import { authClient } from "../lib/auth-client";
+import { useRouter } from 'next/navigation';
 
 export default function LoginForm() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState("");
+    const router = useRouter();
+
+    const handleSignIn = async () => {
+        try {
+            setIsLoading(true);
+            setError("");
+
+            const { data, error: signInError } = await authClient.signIn.email({
+                email,
+                password,
+                callbackURL: "/dashboard",
+            });
+
+            //router.push("/dashboard");
+
+            console.log("Logged in:", data);
+
+
+        } catch (error: unknown) {
+            if (error instanceof Error) {
+                setError(error.message);
+            } else if (typeof error === 'string') {
+                setError(error);
+            } else {
+                setError("An unknown error occurred.");
+            }
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
     return (
         <div>
             <div className='p-12 '>
@@ -12,18 +51,25 @@ export default function LoginForm() {
                     <Image src={Logo} alt='logo'></Image>
                 </div>
                 <div className='text-center'>
-                <h2 className='text-2xl font-semibold'>Log in to your account</h2>
-                <p className='text-gray-500 mt-2 mb-6'>Welcome back! Please enter your details.</p>
+                    <h2 className='text-2xl font-semibold'>Log in to your account</h2>
+                    <p className='text-gray-500 mt-2 mb-6'>Welcome back! Please enter your details.</p>
                 </div>
 
 
                 <fieldset className="fieldset">
                     <label className="label">Email</label>
-                    <input type="email" className="input w-full" placeholder="Email" />
+                    <input type="email" className="input w-full" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                     <label className="label">Password</label>
-                    <input type="password" className="input w-full" placeholder="Password" />
+                    <input type="password" className="input w-full" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                     <div><a className="link link-hover">Forgot password?</a></div>
-                    <Link href='/Dashboard' className="btn bg-[#007BC4] border-0 mt-4 text-white">Login</Link>
+                    {/* <Link href='/dashboard' className="btn bg-[#007BC4] border-0 mt-4 text-white" onClick={handleSignIn}>Login</Link> */}
+                    <button
+                        className="btn bg-[#007BC4] border-0 mt-4 text-white w-full"
+                        onClick={handleSignIn}
+                        disabled={isLoading}
+                    >
+                        {isLoading ? "Logging in..." : "Login"}
+                    </button>
                 </fieldset>
 
                 <button className="btn  mt-4 w-full"><FcGoogle />Continue with Google</button>

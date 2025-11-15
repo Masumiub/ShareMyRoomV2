@@ -1,7 +1,20 @@
 import React from 'react'
 import MyBookings from '../components/MyBookings'
+import { auth } from "../api/auth/[...auth]/route";
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
 
-export default function page() {
+export default async function page() {
+
+    const session = await auth.api.getSession({
+        headers: await headers() 
+    });
+
+    if (!session?.user) {
+        redirect("/");
+    }
+
+
     return (
         <div className='max-w-6xl mx-auto px-4 py-8'>
 
