@@ -76,7 +76,7 @@ export default function HorizontalCard({
                                 <span className="text-2xl font-bold text-gray-900">${pricePerNight}</span>
                                 <span className="text-gray-600 text-sm">/night</span>
                             </div>
-                            <Link href='/RoomDetails' className="btn btn-sm bg-[#007BC4] hover:bg-[#01588b] border-0 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200">
+                            <Link href='/room' className="btn btn-sm bg-[#007BC4] hover:bg-[#01588b] border-0 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200">
                                 Book Now
                             </Link>
                         </div>

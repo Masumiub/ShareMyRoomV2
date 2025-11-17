@@ -31,7 +31,7 @@ const router = useRouter();
     const Links =
         <>
             <li><Link href='/'>Home</Link></li>
-            <li><Link href='/FindARoom'>Find a Room</Link></li>
+            <li><Link href='/find-room'>Find a Room</Link></li>
             <li><a>List Your Property</a></li>
             <li><a>Why ShareMyRoom</a></li>
             <li><Link href='/dashboard'>Dashboard</Link></li>
